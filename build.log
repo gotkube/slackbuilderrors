@@ -1,0 +1,2405 @@
+checking for a BSD-compatible install... /usr/bin/ginstall -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for g++... g++
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... none needed
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of g++... gcc3
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating src/config.h
+config.status: src/config.h is unchanged
+config.status: executing depfiles commands
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating aapl/Makefile
+config.status: creating src/config.h
+config.status: src/config.h is unchanged
+config.status: executing depfiles commands
+configuration of kelbt complete
+Making all in aapl
+make[1]: Entering directory '/tmp/SBo/kelbt-0.16/aapl'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/tmp/SBo/kelbt-0.16/aapl'
+Making all in src
+make[1]: Entering directory '/tmp/SBo/kelbt-0.16/src'
+echo '#define VERSION "0.16"' > version.h
+echo '#define PUBDATE "February 2015"' >> version.h
+make  all-am
+make[2]: Entering directory '/tmp/SBo/kelbt-0.16/src'
+g++ -DHAVE_CONFIG_H -I.  -I../aapl   -O2 -MT kelbt-main.o -MD -MP -MF .deps/kelbt-main.Tpo -c -o kelbt-main.o `test -f 'main.cpp' || echo './'`main.cpp
+mv -f .deps/kelbt-main.Tpo .deps/kelbt-main.Po
+g++ -DHAVE_CONFIG_H -I.  -I../aapl   -O2 -MT kelbt-parsedata.o -MD -MP -MF .deps/kelbt-parsedata.Tpo -c -o kelbt-parsedata.o `test -f 'parsedata.cpp' || echo './'`parsedata.cpp
+mv -f .deps/kelbt-parsedata.Tpo .deps/kelbt-parsedata.Po
+g++ -DHAVE_CONFIG_H -I.  -I../aapl   -O2 -MT kelbt-closure.o -MD -MP -MF .deps/kelbt-closure.Tpo -c -o kelbt-closure.o `test -f 'closure.cpp' || echo './'`closure.cpp
+mv -f .deps/kelbt-closure.Tpo .deps/kelbt-closure.Po
+g++ -DHAVE_CONFIG_H -I.  -I../aapl   -O2 -MT kelbt-fsmbase.o -MD -MP -MF .deps/kelbt-fsmbase.Tpo -c -o kelbt-fsmbase.o `test -f 'fsmbase.cpp' || echo './'`fsmbase.cpp
+mv -f .deps/kelbt-fsmbase.Tpo .deps/kelbt-fsmbase.Po
+g++ -DHAVE_CONFIG_H -I.  -I../aapl   -O2 -MT kelbt-fsmattach.o -MD -MP -MF .deps/kelbt-fsmattach.Tpo -c -o kelbt-fsmattach.o `test -f 'fsmattach.cpp' || echo './'`fsmattach.cpp
+mv -f .deps/kelbt-fsmattach.Tpo .deps/kelbt-fsmattach.Po
+g++ -DHAVE_CONFIG_H -I.  -I../aapl   -O2 -MT kelbt-fsmgraph.o -MD -MP -MF .deps/kelbt-fsmgraph.Tpo -c -o kelbt-fsmgraph.o `test -f 'fsmgraph.cpp' || echo './'`fsmgraph.cpp
+mv -f .deps/kelbt-fsmgraph.Tpo .deps/kelbt-fsmgraph.Po
+g++ -DHAVE_CONFIG_H -I.  -I../aapl   -O2 -MT kelbt-codegen.o -MD -MP -MF .deps/kelbt-codegen.Tpo -c -o kelbt-codegen.o `test -f 'codegen.cpp' || echo './'`codegen.cpp
+mv -f .deps/kelbt-codegen.Tpo .deps/kelbt-codegen.Po
+g++ -DHAVE_CONFIG_H -I.  -I../aapl   -O2 -MT kelbt-gvdotgen.o -MD -MP -MF .deps/kelbt-gvdotgen.Tpo -c -o kelbt-gvdotgen.o `test -f 'gvdotgen.cpp' || echo './'`gvdotgen.cpp
+mv -f .deps/kelbt-gvdotgen.Tpo .deps/kelbt-gvdotgen.Po
+g++ -DHAVE_CONFIG_H -I.  -I../aapl   -O2 -MT kelbt-klscan.o -MD -MP -MF .deps/kelbt-klscan.Tpo -c -o kelbt-klscan.o `test -f 'klscan.cpp' || echo './'`klscan.cpp
+mv -f .deps/kelbt-klscan.Tpo .deps/kelbt-klscan.Po
+g++ -DHAVE_CONFIG_H -I.  -I../aapl   -O2 -MT kelbt-klparse.o -MD -MP -MF .deps/kelbt-klparse.Tpo -c -o kelbt-klparse.o `test -f 'klparse.cpp' || echo './'`klparse.cpp
+klparse.cpp:163:17: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  163 |         50, 50, -1, 50, -1, 50, 50, -1,
+      |                 ^~
+klparse.cpp:163:25: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  163 |         50, 50, -1, 50, -1, 50, 50, -1,
+      |                         ^~
+klparse.cpp:163:37: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  163 |         50, 50, -1, 50, -1, 50, 50, -1,
+      |                                     ^~
+klparse.cpp:164:9: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  164 |         -1, -1, -1, -1, 50, -1, 50, 1,
+      |         ^~
+klparse.cpp:164:13: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  164 |         -1, -1, -1, -1, 50, -1, 50, 1,
+      |             ^~
+klparse.cpp:164:17: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  164 |         -1, -1, -1, -1, 50, -1, 50, 1,
+      |                 ^~
+klparse.cpp:164:21: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  164 |         -1, -1, -1, -1, 50, -1, 50, 1,
+      |                     ^~
+klparse.cpp:164:29: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  164 |         -1, -1, -1, -1, 50, -1, 50, 1,
+      |                             ^~
+klparse.cpp:165:22: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  165 |         0, 93, 3, 4, -1, 5, -1, 7,
+      |                      ^~
+klparse.cpp:165:29: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  165 |         0, 93, 3, 4, -1, 5, -1, 7,
+      |                             ^~
+klparse.cpp:166:12: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  166 |         2, -1, -1, -1, -1, -1, 6, -1,
+      |            ^~
+klparse.cpp:166:16: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  166 |         2, -1, -1, -1, -1, -1, 6, -1,
+      |                ^~
+klparse.cpp:166:20: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  166 |         2, -1, -1, -1, -1, -1, 6, -1,
+      |                    ^~
+klparse.cpp:166:24: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  166 |         2, -1, -1, -1, -1, -1, 6, -1,
+      |                        ^~
+klparse.cpp:166:28: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  166 |         2, -1, -1, -1, -1, -1, 6, -1,
+      |                            ^~
+klparse.cpp:166:35: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  166 |         2, -1, -1, -1, -1, -1, 6, -1,
+      |                                   ^~
+klparse.cpp:167:13: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  167 |         48, -1, -1, 49, 85, 86, 87, 88,
+      |             ^~
+klparse.cpp:167:17: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  167 |         48, -1, -1, 49, 85, 86, 87, 88,
+      |                 ^~
+klparse.cpp:168:33: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  168 |         89, 90, 91, 92, 16, 83, -1, -1,
+      |                                 ^~
+klparse.cpp:168:37: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  168 |         89, 90, 91, 92, 16, 83, -1, -1,
+      |                                     ^~
+klparse.cpp:169:9: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  169 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |         ^~
+klparse.cpp:169:13: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  169 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |             ^~
+klparse.cpp:169:17: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  169 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                 ^~
+klparse.cpp:169:21: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  169 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                     ^~
+klparse.cpp:169:25: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  169 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                         ^~
+klparse.cpp:169:29: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  169 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                             ^~
+klparse.cpp:169:33: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  169 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                 ^~
+klparse.cpp:169:37: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  169 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                     ^~
+klparse.cpp:170:9: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  170 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |         ^~
+klparse.cpp:170:13: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  170 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |             ^~
+klparse.cpp:170:17: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  170 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                 ^~
+klparse.cpp:170:21: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  170 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                     ^~
+klparse.cpp:170:25: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  170 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                         ^~
+klparse.cpp:170:29: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  170 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                             ^~
+klparse.cpp:170:33: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  170 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                 ^~
+klparse.cpp:170:37: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  170 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                     ^~
+klparse.cpp:171:9: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  171 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |         ^~
+klparse.cpp:171:13: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  171 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |             ^~
+klparse.cpp:171:17: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  171 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                 ^~
+klparse.cpp:171:21: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  171 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                     ^~
+klparse.cpp:171:25: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  171 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                         ^~
+klparse.cpp:171:29: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  171 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                             ^~
+klparse.cpp:171:33: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  171 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                 ^~
+klparse.cpp:171:37: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  171 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                     ^~
+klparse.cpp:172:9: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  172 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |         ^~
+klparse.cpp:172:13: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  172 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |             ^~
+klparse.cpp:172:17: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  172 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                 ^~
+klparse.cpp:172:21: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  172 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                     ^~
+klparse.cpp:172:25: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  172 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                         ^~
+klparse.cpp:172:29: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  172 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                             ^~
+klparse.cpp:172:33: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  172 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                 ^~
+klparse.cpp:172:37: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  172 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                     ^~
+klparse.cpp:173:9: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  173 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |         ^~
+klparse.cpp:173:13: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  173 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |             ^~
+klparse.cpp:173:17: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  173 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                 ^~
+klparse.cpp:173:21: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  173 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                     ^~
+klparse.cpp:173:25: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  173 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                         ^~
+klparse.cpp:173:29: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  173 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                             ^~
+klparse.cpp:173:33: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  173 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                 ^~
+klparse.cpp:173:37: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  173 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                     ^~
+klparse.cpp:174:9: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  174 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |         ^~
+klparse.cpp:174:13: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  174 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |             ^~
+klparse.cpp:174:17: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  174 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                 ^~
+klparse.cpp:174:21: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  174 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                     ^~
+klparse.cpp:174:25: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  174 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                         ^~
+klparse.cpp:174:29: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  174 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                             ^~
+klparse.cpp:174:33: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  174 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                 ^~
+klparse.cpp:174:37: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  174 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                     ^~
+klparse.cpp:175:9: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  175 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |         ^~
+klparse.cpp:175:13: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  175 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |             ^~
+klparse.cpp:175:17: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  175 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                 ^~
+klparse.cpp:175:21: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  175 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                     ^~
+klparse.cpp:175:25: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  175 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                         ^~
+klparse.cpp:175:29: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  175 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                             ^~
+klparse.cpp:175:33: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  175 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                 ^~
+klparse.cpp:175:37: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  175 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                     ^~
+klparse.cpp:176:9: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  176 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |         ^~
+klparse.cpp:176:13: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  176 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |             ^~
+klparse.cpp:176:17: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  176 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                 ^~
+klparse.cpp:176:21: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  176 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                     ^~
+klparse.cpp:176:25: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  176 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                         ^~
+klparse.cpp:176:29: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  176 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                             ^~
+klparse.cpp:176:33: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  176 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                 ^~
+klparse.cpp:176:37: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  176 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                     ^~
+klparse.cpp:177:9: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  177 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |         ^~
+klparse.cpp:177:13: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  177 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |             ^~
+klparse.cpp:177:17: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  177 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                 ^~
+klparse.cpp:177:21: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  177 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                     ^~
+klparse.cpp:177:25: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  177 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                         ^~
+klparse.cpp:177:29: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  177 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                             ^~
+klparse.cpp:177:33: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  177 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                 ^~
+klparse.cpp:177:37: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  177 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                     ^~
+klparse.cpp:178:21: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  178 |         83, 83, 11, -1, -1, 9, -1, -1,
+      |                     ^~
+klparse.cpp:178:25: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  178 |         83, 83, 11, -1, -1, 9, -1, -1,
+      |                         ^~
+klparse.cpp:178:32: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  178 |         83, 83, 11, -1, -1, 9, -1, -1,
+      |                                ^~
+klparse.cpp:178:36: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  178 |         83, 83, 11, -1, -1, 9, -1, -1,
+      |                                    ^~
+klparse.cpp:179:9: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  179 |         -1, 56, -1, -1, -1, -1, -1, -1,
+      |         ^~
+klparse.cpp:179:17: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  179 |         -1, 56, -1, -1, -1, -1, -1, -1,
+      |                 ^~
+klparse.cpp:179:21: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  179 |         -1, 56, -1, -1, -1, -1, -1, -1,
+      |                     ^~
+klparse.cpp:179:25: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  179 |         -1, 56, -1, -1, -1, -1, -1, -1,
+      |                         ^~
+klparse.cpp:179:29: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  179 |         -1, 56, -1, -1, -1, -1, -1, -1,
+      |                             ^~
+klparse.cpp:179:33: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  179 |         -1, 56, -1, -1, -1, -1, -1, -1,
+      |                                 ^~
+klparse.cpp:179:37: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  179 |         -1, 56, -1, -1, -1, -1, -1, -1,
+      |                                     ^~
+klparse.cpp:180:9: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  180 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |         ^~
+klparse.cpp:180:13: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  180 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |             ^~
+klparse.cpp:180:17: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  180 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                 ^~
+klparse.cpp:180:21: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  180 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                     ^~
+klparse.cpp:180:25: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  180 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                         ^~
+klparse.cpp:180:29: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  180 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                             ^~
+klparse.cpp:180:33: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  180 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                 ^~
+klparse.cpp:180:37: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  180 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                     ^~
+klparse.cpp:181:9: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  181 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |         ^~
+klparse.cpp:181:13: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  181 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |             ^~
+klparse.cpp:181:17: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  181 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                 ^~
+klparse.cpp:181:21: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  181 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                     ^~
+klparse.cpp:181:25: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  181 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                         ^~
+klparse.cpp:181:29: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  181 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                             ^~
+klparse.cpp:181:33: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  181 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                 ^~
+klparse.cpp:181:37: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  181 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                     ^~
+klparse.cpp:182:9: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  182 |         -1, -1, 8, 55, -1, 10, 61, -1,
+      |         ^~
+klparse.cpp:182:13: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  182 |         -1, -1, 8, 55, -1, 10, 61, -1,
+      |             ^~
+klparse.cpp:182:24: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  182 |         -1, -1, 8, 55, -1, 10, 61, -1,
+      |                        ^~
+klparse.cpp:182:36: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  182 |         -1, -1, 8, 55, -1, 10, 61, -1,
+      |                                    ^~
+klparse.cpp:183:9: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  183 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |         ^~
+klparse.cpp:183:13: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  183 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |             ^~
+klparse.cpp:183:17: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  183 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                 ^~
+klparse.cpp:183:21: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  183 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                     ^~
+klparse.cpp:183:25: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  183 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                         ^~
+klparse.cpp:183:29: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  183 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                             ^~
+klparse.cpp:183:33: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  183 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                 ^~
+klparse.cpp:183:37: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  183 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                     ^~
+klparse.cpp:184:9: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  184 |         -1, -1, 13, -1, -1, -1, -1, -1,
+      |         ^~
+klparse.cpp:184:13: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  184 |         -1, -1, 13, -1, -1, -1, -1, -1,
+      |             ^~
+klparse.cpp:184:21: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  184 |         -1, -1, 13, -1, -1, -1, -1, -1,
+      |                     ^~
+klparse.cpp:184:25: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  184 |         -1, -1, 13, -1, -1, -1, -1, -1,
+      |                         ^~
+klparse.cpp:184:29: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  184 |         -1, -1, 13, -1, -1, -1, -1, -1,
+      |                             ^~
+klparse.cpp:184:33: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  184 |         -1, -1, 13, -1, -1, -1, -1, -1,
+      |                                 ^~
+klparse.cpp:184:37: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  184 |         -1, -1, 13, -1, -1, -1, -1, -1,
+      |                                     ^~
+klparse.cpp:185:9: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  185 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |         ^~
+klparse.cpp:185:13: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  185 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |             ^~
+klparse.cpp:185:17: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  185 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                 ^~
+klparse.cpp:185:21: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  185 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                     ^~
+klparse.cpp:185:25: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  185 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                         ^~
+klparse.cpp:185:29: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  185 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                             ^~
+klparse.cpp:185:33: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  185 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                 ^~
+klparse.cpp:185:37: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  185 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                     ^~
+klparse.cpp:186:9: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  186 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |         ^~
+klparse.cpp:186:13: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  186 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |             ^~
+klparse.cpp:186:17: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  186 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                 ^~
+klparse.cpp:186:21: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  186 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                     ^~
+klparse.cpp:186:25: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  186 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                         ^~
+klparse.cpp:186:29: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  186 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                             ^~
+klparse.cpp:186:33: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  186 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                 ^~
+klparse.cpp:186:37: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  186 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                     ^~
+klparse.cpp:187:9: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  187 |         -1, -1, -1, -1, -1, 12, 61, -1,
+      |         ^~
+klparse.cpp:187:13: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  187 |         -1, -1, -1, -1, -1, 12, 61, -1,
+      |             ^~
+klparse.cpp:187:17: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  187 |         -1, -1, -1, -1, -1, 12, 61, -1,
+      |                 ^~
+klparse.cpp:187:21: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  187 |         -1, -1, -1, -1, -1, 12, 61, -1,
+      |                     ^~
+klparse.cpp:187:25: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  187 |         -1, -1, -1, -1, -1, 12, 61, -1,
+      |                         ^~
+klparse.cpp:187:37: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  187 |         -1, -1, -1, -1, -1, 12, 61, -1,
+      |                                     ^~
+klparse.cpp:188:9: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  188 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |         ^~
+klparse.cpp:188:13: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  188 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |             ^~
+klparse.cpp:188:17: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  188 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                 ^~
+klparse.cpp:188:21: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  188 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                     ^~
+klparse.cpp:188:25: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  188 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                         ^~
+klparse.cpp:188:29: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  188 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                             ^~
+klparse.cpp:188:33: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  188 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                 ^~
+klparse.cpp:188:37: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  188 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                     ^~
+klparse.cpp:189:9: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  189 |         -1, -1, 62, -1, -1, -1, -1, -1,
+      |         ^~
+klparse.cpp:189:13: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  189 |         -1, -1, 62, -1, -1, -1, -1, -1,
+      |             ^~
+klparse.cpp:189:21: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  189 |         -1, -1, 62, -1, -1, -1, -1, -1,
+      |                     ^~
+klparse.cpp:189:25: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  189 |         -1, -1, 62, -1, -1, -1, -1, -1,
+      |                         ^~
+klparse.cpp:189:29: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  189 |         -1, -1, 62, -1, -1, -1, -1, -1,
+      |                             ^~
+klparse.cpp:189:33: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  189 |         -1, -1, 62, -1, -1, -1, -1, -1,
+      |                                 ^~
+klparse.cpp:189:37: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  189 |         -1, -1, 62, -1, -1, -1, -1, -1,
+      |                                     ^~
+klparse.cpp:190:9: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  190 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |         ^~
+klparse.cpp:190:13: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  190 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |             ^~
+klparse.cpp:190:17: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  190 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                 ^~
+klparse.cpp:190:21: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  190 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                     ^~
+klparse.cpp:190:25: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  190 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                         ^~
+klparse.cpp:190:29: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  190 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                             ^~
+klparse.cpp:190:33: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  190 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                 ^~
+klparse.cpp:190:37: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  190 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                     ^~
+klparse.cpp:191:9: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  191 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |         ^~
+klparse.cpp:191:13: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  191 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |             ^~
+klparse.cpp:191:17: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  191 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                 ^~
+klparse.cpp:191:21: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  191 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                     ^~
+klparse.cpp:191:25: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  191 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                         ^~
+klparse.cpp:191:29: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  191 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                             ^~
+klparse.cpp:191:33: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  191 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                 ^~
+klparse.cpp:191:37: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  191 |         -1, -1, -1, -1, -1, -1, -1, -1,
+      |                                     ^~
+klparse.cpp:192:9: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  192 |         -1, -1, -1, -1, -1, 14, 17, 15,
+      |         ^~
+klparse.cpp:192:13: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  192 |         -1, -1, -1, -1, -1, 14, 17, 15,
+      |             ^~
+klparse.cpp:192:17: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  192 |         -1, -1, -1, -1, -1, 14, 17, 15,
+      |                 ^~
+klparse.cpp:192:21: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  192 |         -1, -1, -1, -1, -1, 14, 17, 15,
+      |                     ^~
+klparse.cpp:192:25: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  192 |         -1, -1, -1, -1, -1, 14, 17, 15,
+      |                         ^~
+klparse.cpp:193:13: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  193 |         20, -1, -1, -1, -1, -1, -1, -1,
+      |             ^~
+klparse.cpp:193:17: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  193 |         20, -1, -1, -1, -1, -1, -1, -1,
+      |                 ^~
+klparse.cpp:193:21: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  193 |         20, -1, -1, -1, -1, -1, -1, -1,
+      |                     ^~
+klparse.cpp:193:25: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  193 |         20, -1, -1, -1, -1, -1, -1, -1,
+      |                         ^~
+klparse.cpp:193:29: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  193 |         20, -1, -1, -1, -1, -1, -1, -1,
+      |                             ^~
+klparse.cpp:193:33: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  193 |         20, -1, -1, -1, -1, -1, -1, -1,
+      |                                 ^~
+klparse.cpp:193:37: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  193 |         20, -1, -1, -1, -1, -1, -1, -1,
+      |                                     ^~
+klparse.cpp:194:9: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  194 |         -1, -1, -1, -1, -1, -1, -1, 53,
+      |         ^~
+klparse.cpp:194:13: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  194 |         -1, -1, -1, -1, -1, -1, -1, 53,
+      |             ^~
+klparse.cpp:194:17: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  194 |         -1, -1, -1, -1, -1, -1, -1, 53,
+      |                 ^~
+klparse.cpp:194:21: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  194 |         -1, -1, -1, -1, -1, -1, -1, 53,
+      |                     ^~
+klparse.cpp:194:25: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  194 |         -1, -1, -1, -1, -1, -1, -1, 53,
+      |                         ^~
+klparse.cpp:194:29: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  194 |         -1, -1, -1, -1, -1, -1, -1, 53,
+      |                             ^~
+klparse.cpp:194:33: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  194 |         -1, -1, -1, -1, -1, -1, -1, 53,
+      |                                 ^~
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  424 | };
+      | ^
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+klparse.cpp:424:1: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+make[2]: *** [Makefile:588: kelbt-klparse.o] Error 1
+make[2]: Leaving directory '/tmp/SBo/kelbt-0.16/src'
+make[1]: *** [Makefile:314: all] Error 2
+make[1]: Leaving directory '/tmp/SBo/kelbt-0.16/src'
+make: *** [Makefile:356: all-recursive] Error 1
